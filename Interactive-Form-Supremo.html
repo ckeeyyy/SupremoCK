@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Camila Kim Supremo">
+    <meta name="description" content="Interactive Form">
+    <meta name="keywords" content="Form">
+    <link rel="stylesheet" href="Interactive-Form-Supremo.css">
+    <title>Interactive Form</title>
+</head>
+<body>
+
+        <form id="Form">
+            <label for="name">Name</label> 
+            <br>
+            <input type="text" class="input-field" id="name" name="name" required>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" class="input-field" id="email" name="email" required>
+            <br>
+          <div class="btn">
+            <button type="button" onclick="validateEmail()">Submit</button>
+          </div>
+        </form>
+
+        <script>
+            function validateEmail() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value
+
+                alert("Submitted Successfully!");
+            }
+
+        </script>
+    
+</body>
+</html>

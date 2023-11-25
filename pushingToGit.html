@@ -20,7 +20,7 @@
     <hr>
 
     <p>
-    First lets discuss what is git? <br>
+    First let's discuss what is git? <br>
     Git is a <dfn>free and open source</dfn> distributed control system designed to handle <br>
     everything from small to very large projects with speed and efficiency. 
     </p>
@@ -47,10 +47,7 @@
         3. Next is to open your VSCode.
 
         4. Create a new file in VSCode and then put it in the folder that you created (Refer to step #1).
-
-            Output: 
-
-                <samp>pushingToGit.html</samp>
+            Ex: pushingToGit.html
 
         5. Input your code to your html file. 
 
@@ -66,27 +63,31 @@
         8. Make sure you configure your credentials. 
             $ git config --global user@email "MY_NAME@example.com"
 
-            Output:
-
-                <samp>$ git config --global user.email "camilakim.supremo@hcdc.edu.ph"</samp>
-
         9. Add your remote repository in your local machine
             $ git remote add <dfn>[localComputer] [url to your repository]</dfn>
 
         10. Make sure you're in the correct branch
             $ git branch -M main
 
-        11. Check your file using git status 
+        11. Add all your code to the add phase
+            $ git add <dfn>[Name of your file]</dfn>
+
+        12. Check your file using git status 
             $ git status
 
-        12. Add all your code to the add phase
-            $ git add -A 
+            Output: 
+
+                <samp>Your branch is up to date with 'origin/main'.
+
+                    Changes to be committed:
+                      (use "git restore --staged <file>..." to unstage)
+                            new file:   pushingToGit.html</samp>
 
         13. Then commit your code to the repository 
-            $ git commit -M "Commite code"
+            $ git commit -M "Commit code"
 
         14. Push your code to the repository 
-            $ git push -u (localComputer) (currentBranch)
+            $ git push -u <dfn>[localComputer] [currentBranch]</dfn>
 
     </code></pre>
         
